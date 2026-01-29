@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Видео и аудио в HTML5</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Смешарики - город Омск</h1>
+        <div class="video-container">
+            <video width="900" preload="metadata" poster="images/smesharikiBack.jpg">
+                <source src="Omsk.mp4" type="video/mp4"/>
+            </video>
+            <div id="subtitles"></div>
+            <div id="controls" class="hidden">
+                <div class="play-rewind">
+                    <img class="arrow prev" src="images/arrow.png"></img>
+                    <img id="playBtn" src="images/play.png" alt="play btn"></img>
+                    <img class="arrow next" src="images/arrow.png"></img>
+                </div>
+                <div class="timeline">
+                    <span id="timer">00:00</span>
+                    <input
+                        type="range"
+                        value="0"
+                        max="143" />
+                </div>
+                <div class="volume-block">
+                    <img src="images/volume.png" alt="volume">
+                    <input
+                    type="range"
+                    step="0.05"
+                    min="0"
+                    max="1"
+                    value="0.5"
+                    id="volume" />
+                </div>
+                <select name="speed" id="speed">
+                    <option value="0.5">0.5x</option>
+                    <option value="1" selected>1x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2">2x</option>
+                </select>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

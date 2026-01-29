@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    box-sizing: border-box;
+    color: #000000;
+  }
+
+    @font-face {
+      font-family: 'geologica';
+      src: url("fonts/Geologica.ttf") format("opentype");
+    }
+
+
+    body{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: geologica;
+    }
+
+td{
+    padding: 5px;
+}
+
+tr{
+    padding-top: 10px;
+}
+
+img.view{
+    width: 15px;
+    padding: 0 5px;
+}
+
+p{
+    font-family: "geologica";
+}
+
+table{
+    border-collapse: collapse;
+    margin: 3% auto;
+    height: max-content;
+  }
+
+ 
+  caption{
+    
+    padding-bottom: 30px;
+    font-size: 50 px;
+    font-weight: 800;
+    text-align: center;
+  }
+  tr:nth-of-type(odd){
+    background-color: #e6fbff;
+  }
+  tr:nth-of-type(even){
+    background-color: #ebf5f8;
+  }
+
+  th, td{
+    padding: 7%;
+    font-size: 24px;
+    text-align: center;
+  }
+ 
+  img.circle{
+    width: 40px;
+    padding: 0 5px;
+}
+
+
+
+.container_southern_australia{
+   margin: 20px 100px;
+}
+
+.container_northern_territory{
+    margin: 20px 100px;
+ }
+ .container_western_australia{
+    margin: 20px 100px;
+ }
+
+
+
+img#southern_australia{
+    float: right;
+    padding: 5px 20px;
+}
+
+img#northern_territory{
+    float: right;
+    padding: 5px 20px;
+}
+img#western_australia{
+    float: right;
+    padding: 5px 20px;
+}
+
+.container{
+    display: flex;
+
+}
+
+p.align{
+    padding: 20px;;
+    margin-top: 40px ;
+    margin-left: 10px,
+}
+
+h3{
+    
+    margin-top: 3%;
+}
+
+h1{
+    text-align: center;
+    margin-top: 3%;
+}
+
+
+a{
+    
+    text-decoration: none;
+    color:rgb(1, 103, 6);
+}
+
+table{
+    margin: 20px;
+}
+
+a:hover{
+    
+    color:rgb(1, 45, 16);
+}

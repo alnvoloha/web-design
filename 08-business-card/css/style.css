@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Proxima Black';
+    src: url("../Proxima_Nova_Black.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'SF';
+    src: url("../SF.otf") format("opentype");
+  }
+
+
+  
+
+
+
+.vizitka{
+    border: 1px solid #000;
+    width: 600px;
+    height: 325px;
+    margin: 30px auto;;
+    position: relative;
+    overflow:hidden;
+    padding: 28px;
+}
+
+.vasilek{
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    z-index: -1;
+}
+.vasilek img{
+    width: 642px;
+    opacity: .4;
+}
+
+.contacts{
+    margin: 93px 0 0 0;
+}
+.name{
+    font-family: "Proxima Black", sans-serif;
+    color: #13367a;
+    font-size: 67px;
+    line-height: 54px;
+    margin: 10px 0 0 0;
+}
+.status{
+    font-family: "SF", sans-serif;
+    font-size: 33px;
+    letter-spacing: 4px;
+    color: #081c43;
+}
+.contact{
+    list-style: none;
+}
+.contact a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 23px;
+    color: #081c43;
+}
+.contact:first-child{
+    margin: 0 0 3px 0;
+}
+.contact:last-child a{
+    letter-spacing: .5px;;
+}
+
+
+
+.vasilek._back{
+    right: 180px;
+    bottom: 0;
+    top: 15%;
+
+}
+.vasilek._back img{
+    opacity: 1;
+    width: 242px;
+}

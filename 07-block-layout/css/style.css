@@ -1,0 +1,33 @@
+
+
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+#box{
+    margin-top: 5%;
+	width: 65vw;
+}
+
+#left {
+    width: 30vw;
+    float: left;
+	margin: 0 1vw 0 0 ;
+}
+
+#left img{
+    margin-top: 3%;
+	width: 80%;
+    bottom: 0;
+}
+
+#right {
+    width: 31vw;
+   
+}
+
+
+
+
+ 

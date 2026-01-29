@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Формы html</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<fieldset id="main">
+		<form> 
+			<div id="nameForm">Заказ товара</div>
+			<div>
+				<label>Название</label>
+				<input type="text" placeholder="111-ABC/abc(11)" autofocus required pattern="[0-9]{3}-[A-Z]{3}/[a-z]{3}\{[a-z]{2}\}">
+			</div>
+			<div>
+				<label>Имя</label>
+				<input type="text" autocomplete="Иван" pattern="[A-Za-zА-Яа-яЁё\s]{1,}">
+			</div>
+			<div>
+				<label>Эл. почта</label>
+				<input type="email" required>
+			</div>
+			<div>
+				<label>Цвет</label>
+				<input type="color" id="color" value="#f00" required>
+			</div>
+			<div>
+				<label >Количество</label>
+				<input type="number" id="count" value="1" min="1" max="10"  style="width: 5em;" required>
+			</div>
+			<div>
+				<label >Дата/время</label>
+				<input type="datetime-local" placeholder="дд.мм.гг."  required>
+			</div>
+			<div>
+			<fieldset>
+				<legend>Способ доставки</legend>
+				<ul>
+					<li>
+						<label><input type="checkbox">Самовывоз</label>
+					</li>
+					<li>
+						<label><input type="checkbox">Курьером</label>
+					</li>
+				</ul>
+			</fieldset>
+			</div>
+			<div>
+				<label>Ближайший пункт самовывоза</label>
+				<select>
+					<option selected="selected">Выберите</option>
+					<option>Главный корпус БГУ</option>
+					<option>Минск-арена</option>
+					<option>Написали в личку</option>
+				</select>
+			</div>
+			<div>
+			<fieldset>
+				<legend>Вид упаковки</legend>
+				<ul id="imagesBlock">
+					<li>
+						<label><input type="radio"> <img src="images/8Mgift.png" alt="picture1" width="100vw"> </label>
+					</li>
+					<li>
+						<label> <input type="radio"> <img src="images/HBgift.png" alt="picture2" width="100vw">  </label>
+					</li>
+					<li>
+						<label><input type="radio"> <img src="images/NYfift.png" alt="picture3" width="100vw">  </label>
+					</li>
+				</ul>
+			</fieldset>
+			</div>
+			<div>
+				<button type="submit">Заказать</button>
+			</div>
+		</form>
+	</fieldset>
+	</body>
+</html>

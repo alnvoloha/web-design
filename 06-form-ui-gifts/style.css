@@ -1,0 +1,190 @@
+*{
+    background-color: #37393c;
+    font-family: Arial;
+}
+
+#main{
+    max-width: 30%;
+margin-left: 35% ;
+margin-right: 35%;
+}
+
+   label {
+    grid-column: labels;
+    grid-row: auto;
+   }
+
+   input {
+    grid-column: controls;
+    grid-row: auto;
+    padding: .4em;
+    border: 0;
+   }
+
+   button {
+    padding: 1em;
+    border: 0;
+   }
+
+   #nameForm{
+    text-align: center;
+    margin-bottom: 3%;
+    color: #b6daff;
+    font-size: 2em;
+   }
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: [labels] auto [controls];
+    grid-auto-flow: row;
+    grid-gap: .8em;
+	background-color: #37393c;
+    color: white;
+    width: 50%;
+    
+
+}
+
+label {
+    float: left;
+    line-height: 1.7em;
+    margin-top: 0.2em;
+    color: #b6daff;
+    width: 15em;
+}
+
+input,select,textarea {
+    float: right;
+    width: 30em;
+    height: 2em;
+    padding: 0.4em;
+    line-height: 1.2em;
+    color: #efefef;
+    border: 1px solid #a4a4a4;
+	background-color: #202223;
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+	-webkit-border-radius: .4em;
+	-moz-border-radius: .4em;
+    margin-top: .3%;
+	border-radius: 0.4em;
+}
+
+input:focus{
+    border: 1px solid #97b7d9;
+    outline: none;
+	-webkit-box-shadow: inset 0 0.2em 0.5em rgba(0, 0, 0, 0.5), 0 0 1em rgba(151, 183, 217, 0.6);
+	-moz-box-shadow: inset 0 0.2em 0.5em rgba(0, 0, 0, 0.5), 0 0 1em rgba(151, 183, 217, 0.6);
+	box-shadow: inset 0 0.2em 0.5em rgba(0, 0, 0, 0.5), 0 0 1em rgba(151, 183, 217, 0.6);
+}
+
+#count{
+    padding: 0.3em;
+}
+
+button {
+   
+	background-color: #3d6182;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#8db7dd), to(#3d6182));
+    background-image: -moz-linear-gradient(top, #8db7dd, #3d6182);
+    background-image: -ms-linear-gradient(top, #8db7dd, #3d6182);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8db7dd), color-stop(100%, #3d6182));
+    background-image: -webkit-linear-gradient(top, #8db7dd, #3d6182);
+    background-image: -o-linear-gradient(top, #8db7dd, #3d6182);
+    background-image: linear-gradient(top, #8db7dd, #3d6182);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8db7dd', endColorstr='#3d6182', GradientType=0);
+    padding: 1em 1.75em 1em;
+    font-size: 1em;
+    float: right;
+    color: white;
+    cursor: pointer;
+	-webkit-border-radius: 0.3em ;
+	-moz-border-radius: 0.3em;
+	border-radius: 0.3em;
+	-webkit-box-shadow: inset 0 0.125em 0 rgba(255, 255, 255, 0.2), 0 0.125em 0.2em rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 0.125em 0 rgba(255, 255, 255, 0.2), 0 0.125em 0.2em rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 0.125em 0 rgba(255, 255, 255, 0.2), 0 .125em .2em rgba(0, 0, 0, 0.05);
+    -webkit-transition: 0.1s linear all;
+    -moz-transition: 0.1s linear all;
+    -ms-transition: 0.1s linear all;
+    -o-transition: 0.1s linear all;
+    transition: 0.1s linear all;
+}
+
+
+
+
+
+input[type=checkbox],input[type=radio] {
+    width: auto;
+    border: none;
+}
+
+input[type=color]{
+    height: 2em;
+    width: 5em;
+}
+
+input[type=checkbox]:focus, select:focus {
+    outline: 0.1em dotted #666;
+    display: flex;
+
+}
+
+input[disabled] {
+    background-color: #343536;
+    border-color: #585858;
+    cursor: not-allowed;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+ul li {
+    display: block;
+    width: 10%;
+    margin: 0;
+}
+
+ul li label {
+    
+    float: none;
+    width: auto;
+	color: #efefef;
+}
+
+#imagesBlock{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+
+  
+ 
+  
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    grid-gap: 0.3em;
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+  }
