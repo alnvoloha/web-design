@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политическая карта Австралии</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="./styles/normalize.min.css">
+</head>
+<body>
+  <h1 class="header">Политическая карта Австралии</h1>
+   <div class="container">
+    <img src="images/map.png" width="1080" height="805" alt="Карта Австралии" usemap="#image-map">
+    <map name="image-map">
+        <area target="_blank" alt="северная_территория" title="северная_территория" href="northern_territory.html" coords="554,353,362,150" shape="rect">
+        <area target="_blank" alt="южная_австралия" title="южная_австралия" href="southern_australia.html" coords="364,361,614,362,597,630,587,592,547,553,543,568,525,572,535,560,547,533,546,512,522,537,504,553,507,567,489,553,491,541,469,505,432,492,408,482,363,482,364" shape="poly">
+        <area target="_blank" alt="западная_австралия" title="западная_австралия" href="western_australia.html" coords="196,372,150" shape="circle">
+    </map>
+    <table width="30%">
+        <tbody>
+          <tr>
+            <caption align=top>Легенда карты</caption>
+          </tr>
+          <tr>
+            <th>Метка</th>
+            <th font-weight="500">Название</th>
+          </tr>
+          <tr>
+            <th><img class="circle" src="images/circle_western_australia.png"></th>
+            <td align="center">Западная Австралия</td>
+          </tr>
+          <tr>
+            <th><img class="circle" src="images/circle_northern_territory.png"></th>
+            <td align="center">Северная территория</td>
+          </tr>
+          <tr>
+            <th><img class="circle" src="images/circle_southern_australia.png"></th>
+            <td align="center">Южная Австралия</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+</body>
+</html>

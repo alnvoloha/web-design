@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 5rem;
+  max-width: 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logotype {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.logo_img img {
+  width: 3.125rem;
+  height: auto;
+}
+
+.logo_text {
+  margin-left: 0.625rem;
+  font-size: 1.5em;
+}
+
+.navigation {
+  padding: 0.625rem;
+  background-color: #004a41;
+  height: 1.875rem;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin-left: 2.375rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.active_link {
+  text-decoration: none;
+  padding: 0.3125rem 0.925rem;
+  border-radius: 0.9rem;
+  color: #fff;
+  background-color: #02796b;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.3125rem 0.625rem;
+  color: #fff;
+}
+
+.link:hover {
+  color: #c0c0c0;
+}
+
+.active_link:hover {
+  background-color: #029281;
+  color: #c0c0c0;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+
+.resume__image {
+  grid-column: 1;
+}
+
+.resume__image img {
+  width: 100%; 
+  max-width: 70%; 
+  display: block;
+}
+
+.mainContent {
+  margin-left: 2.125rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  font-size: 2.1rem;
+  margin-top: 1.8rem;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 0.9375rem;
+  margin-top: 1.875rem;
+}
+
+.dls {
+  margin-top: 1.875rem;
+}
+
+.about dt {
+  color: #004a41;
+  text-align: right;
+  margin: 0;
+}
+
+.about dd {
+  text-align: left;
+  margin: 0;
+}
+
+.name {
+  margin: 0;
+  margin-top: 1.25rem;
+  font-size: 3.125rem;
+}
+
+.who {
+  font-size: 2.8125rem;
+  font-weight: normal;
+}
+
+.horizontal-line1 {
+  border: none;
+  border-top: 0.1875rem solid #004a41;
+  margin: 0.625rem 0;
+}
+
+.dashed-line {
+  border: none;
+  border-top: 0.3rem dashed #004a41;
+  margin: 0.625rem 0;
+}
+
+.copyrights {
+  margin-top: 7rem;
+  font-size: 1.25rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+.nothing {
+  height: 0.625rem;
+}
+
+#bold-text{
+  font-weight: bold;
+}

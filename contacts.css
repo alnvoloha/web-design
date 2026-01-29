@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 5rem 5rem 5rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.logotype {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.logo_img img {
+  width: 3.125rem;
+  height: auto;
+}
+
+.logo_text {
+  margin-left: 0.625rem;
+  font-size: 1.5em;
+}
+
+.navigation {
+  padding: 0.625rem;
+  background-color: #004a41;
+  height: 1.875rem;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin-left: 2.375rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.active_link {
+  text-decoration: none;
+  padding: 0.3125rem 0.925rem;
+  border-radius: 0.9rem;
+  color: #fff;
+  background-color: #02796b;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.3125rem 0.625rem;
+  color: #fff;
+}
+
+.link:hover {
+  color: #c0c0c0;
+}
+
+.active_link:hover {
+  background-color: #029281;
+  color: #c0c0c0;
+}
+
+
+@font-face {
+  font-family: 'Proxima Black';
+  src: url("./fonts/Proxima_Nova_Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'SF';
+  src: url("./fonts/SF.otf") format("opentype");
+}
+
+
+
+
+
+
+.vizitka{
+  border: 1px solid #000;
+  width: 600px;
+  height: 325px;
+  margin: 30px auto;;
+  position: relative;
+  overflow:hidden;
+  padding: 28px;
+}
+
+.vasilek{
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  z-index: -1;
+}
+.vasilek img{
+  width: 642px;
+  opacity: .4;
+}
+
+.contacts{
+  margin: 93px 0 0 0;
+}
+.name{
+  font-family: "Proxima Black", sans-serif;
+  color: #13367a;
+  font-size: 67px;
+  line-height: 54px;
+  margin: 10px 0 0 0;
+}
+.status{
+  font-family: "SF", sans-serif;
+  font-size: 33px;
+  letter-spacing: 4px;
+  color: #081c43;
+}
+.contact{
+  list-style: none;
+}
+.contact a{
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 23px;
+  color: #081c43;
+}
+.contact:first-child{
+  margin: 0 0 3px 0;
+}
+.contact:last-child a{
+  letter-spacing: .5px;;
+}
+
+#bold-text{
+  font-weight: bold;
+}
